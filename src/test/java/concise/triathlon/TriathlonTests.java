@@ -69,8 +69,15 @@ class TriathlonTests {
 		assertEquals("abc", app.multiple(3));
 		assertEquals("abcde", app.multiple(5));
 		assertEquals("abcdefgh", app.multiple(8));
+		assertEquals("abcdefghij", app.multiple(10));
+		assertEquals("abcdefghijkl", app.multiple(12));
+		assertEquals("abcdefghijklmn", app.multiple(14));
+		assertEquals("abcdefghijklmno", app.multiple(15));
+		assertEquals("abcdefghijklmnopq", app.multiple(17));
 		assertEquals("abcdefghijklmnopqrstuvwxyzabc", app.multiple(29));
 		assertEquals("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", app.multiple(52));
+		assertEquals("abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef" +
+			"ghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz", app.multiple(130));
 	}
 
 	@Test
